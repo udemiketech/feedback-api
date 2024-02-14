@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGODB_URI)
  app.use(express.json())
  app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://first-react-app-ashen-xi.vercel.app",
         allowedHeaders: ["Content-Type", "Authorization", "x-auth-token"],
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"]
     })
